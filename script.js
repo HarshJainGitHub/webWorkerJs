@@ -3,9 +3,6 @@ const worker = new Worker("worker.js");
 const sumButton = document.querySelector("#sumButton");
 const bgButton = document.querySelector("#bgButton");
 
-console.log(sumButton);
-console.log(bgButton);
-
 sumButton.addEventListener("click", (event) => {
   worker.postMessage("hello");
 });
